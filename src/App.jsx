@@ -6,6 +6,17 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import { MultiSelect } from './MultiSelect';
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' }
+];
+
+const selectStyles = {
+
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,14 +45,12 @@ function App() {
       </form> */}
       <Box className='search__form'
         component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
         noValidate
         autoComplete="off"
       >
-        <TextField className='search__input' id="outlined-basic" label="Outlined" variant="outlined" />
-        <Button className='search-btn' variant="contained">Contained</Button>
+        {/* <TextField fullWidth  className='search__input' id="outlined-basic" label="Outlined" variant="outlined" /> */}
+        <MultiSelect selectOptions={options} />
+        <Button sx={{marginLeft: '15px'}} className='search-btn' variant="contained">Contained</Button>
       </Box>
     </>
   )

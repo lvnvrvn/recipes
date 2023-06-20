@@ -8,6 +8,7 @@
 .search__form {
   margin: 50px auto;
   width: 80%;
+  display: flex;
 }
 
 .search__input {
