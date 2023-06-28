@@ -1,26 +1,18 @@
-import { useState } from 'react';
 import './App.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import { MultiSelect } from './MultiSelect';
 
 const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
+  { value: 'potato', label: 'Potato' },
+  { value: 'cheese', label: 'Cheese' },
+  { value: 'lemon', label: 'Lemon' }
 ];
 
-const selectStyles = {
-
-}
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
         {/* <header className="header">
@@ -50,7 +42,7 @@ function App() {
       >
         {/* <TextField fullWidth  className='search__input' id="outlined-basic" label="Outlined" variant="outlined" /> */}
         <MultiSelect selectOptions={options} />
-        <Button sx={{marginLeft: '15px'}} className='search-btn' variant="contained">Contained</Button>
+        <Button sx={{marginLeft: '15px'}} className='search-btn' variant="contained">Search</Button>
       </Box>
     </>
   )
