@@ -7,11 +7,12 @@ const multiSelectStyles = {
   }),
 };
 
-export const MultiSelect = ({ selectOptions }) => (
+export const MultiSelect = ({ selectOptions, onChange }) => (
   <Select
     closeMenuOnSelect={false}
     isMulti
     options={selectOptions}
     styles={multiSelectStyles}
+    onChange={onChange}
   />
 );
