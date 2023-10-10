@@ -1,9 +1,9 @@
-import Select from 'react-select';
+import Select from "react-select";
 
 const multiSelectStyles = {
   container: (baseStyles) => ({
     ...baseStyles,
-    width: '100%',
+    width: "100%",
   }),
 };
 
@@ -14,5 +14,6 @@ export const MultiSelect = ({ selectOptions, onChange }) => (
     options={selectOptions}
     styles={multiSelectStyles}
     onChange={onChange}
+    placeholder="Выберите ингридиенты"
   />
 );
